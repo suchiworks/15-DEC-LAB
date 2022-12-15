@@ -5,19 +5,19 @@ import java.util.Map;
 import lab15DecPrep.CountryMap;
 
 public class CountryMap {
-  private HashMap<String,String>M1;
+  private HashMap<String,String>r1;
 	public Countrymap() {
-		M1= new HashMAp<String,String>();
+		r1= new HashMAp<String,String>();
 	}
 	
 	public HashMAp<String, String>
 	storeCounrtryCapital(String CountryName, String capital)
-M1.put(CountryName, capital);
-	return M1;
+r1.put(CountryName, capital);
+	return r1;
 }
 	
 		public String retriveCountry(String capitalNAme) {
-			Set<Entry<String,String>>set = M1.entrySet();
+			Set<Entry<String,String>>set = r1.entrySet();
 			Iterator<Entry<String, String>> it=set.iterator();
 			while(it.hasNext()) {
 				Map.Entry<String, String>me=it.next();
